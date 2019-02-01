@@ -11,8 +11,7 @@ import java.net.*;
  * 
  * @author Barb Ericson ericson@cc.gatech.edu
  */
-public class FileChooser 
-{
+public class FileChooser {
   
   /////////////////////// methods /////////////////////////////
   
@@ -21,8 +20,7 @@ public class FileChooser
    * @param fileName the name of a file
    * @return the full path for the file
    */
-  public static String getMediaPath(String fileName) 
-  {
+  public static String getMediaPath(String fileName) {
     String path = null;
     String directory = getMediaDirectory();
     boolean done = true;
@@ -37,8 +35,7 @@ public class FileChooser
    * @param fileChooser the file Chooser to use
    * @return the path name
    */
-  public static String pickPath(JFileChooser fileChooser)
-  {
+  public static String pickPath(JFileChooser fileChooser) {
     String path = null;
     
     /* create a JFrame to be the parent of the file 
@@ -63,8 +60,7 @@ public class FileChooser
    * pick a file then the file name will be null.
    * @return the full file name of the picked file or null
    */
-  public static String pickAFile()
-  {
+  public static String pickAFile() {
     JFileChooser fileChooser = null;
     
     // start off the file name as null
@@ -97,8 +93,7 @@ public class FileChooser
    * Method to get the directory for the media
    * @return the media directory
    */
-  public static String getMediaDirectory() 
-  {
+  public static String getMediaDirectory() {
     String directory = null;
     boolean done = false;
     File dirFile = null;

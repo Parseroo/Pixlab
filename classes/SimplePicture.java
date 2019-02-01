@@ -14,8 +14,7 @@ import java.awt.geom.*;
  * 
  * @author Barb Ericson ericson@cc.gatech.edu
  */
-public class SimplePicture implements DigitalPicture
-{
+public class SimplePicture implements DigitalPicture {
   
   /////////////////////// Fields /////////////////////////
   
@@ -56,16 +55,16 @@ public class SimplePicture implements DigitalPicture
   * different call to super() is explicitly made as the first line 
   * of code in a constructor.
   */
- public SimplePicture() 
- {this(200,100);}
+ public SimplePicture() {
+     this(200,100);
+ }
  
  /**
   * A Constructor that takes a file name and uses the file to create
   * a picture
   * @param fileName the file name to use in creating the picture
   */
- public SimplePicture(String fileName)
- {
+ public SimplePicture(String fileName) {
    
    // load the picture into the buffered image 
    load(fileName);
@@ -79,8 +78,7 @@ public class SimplePicture implements DigitalPicture
   * @param width the desired width
   * @param height the desired height
   */
- public  SimplePicture(int width, int height)
- {
+ public  SimplePicture(int width, int height) {
    bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
    title = "None";
    fileName = "None";
@@ -96,8 +94,7 @@ public class SimplePicture implements DigitalPicture
   * @param height the desired height
   * @param theColor the background color for the picture
   */
- public  SimplePicture(int width, int height, Color theColor)
- {
+ public  SimplePicture(int width, int height, Color theColor) {
    this(width,height);
    setAllPixelsToAColor(theColor);
  }
@@ -106,17 +103,14 @@ public class SimplePicture implements DigitalPicture
   * A Constructor that takes a picture to copy information from
   * @param copyPicture the picture to copy from
   */
- public SimplePicture(SimplePicture copyPicture)
- {
-   if (copyPicture.fileName != null)
-   {
+ public SimplePicture(SimplePicture copyPicture) {
+   if (copyPicture.fileName != null) {
       this.fileName = new String(copyPicture.fileName);
       this.extension = copyPicture.extension;
    }
    if (copyPicture.title != null)
       this.title = new String(copyPicture.title);
-   if (copyPicture.bufferedImage != null)
-   {
+   if (copyPicture.bufferedImage != null) {
      this.bufferedImage = new BufferedImage(copyPicture.getWidth(),
                                             copyPicture.getHeight(), BufferedImage.TYPE_INT_RGB);
      this.copyPicture(copyPicture);
@@ -127,8 +121,7 @@ public class SimplePicture implements DigitalPicture
   * A constructor that takes a buffered image
   * @param image the buffered image
   */
- public SimplePicture(BufferedImage image)
- {
+ public SimplePicture(BufferedImage image) {
    this.bufferedImage = image;
    title = "None";
    fileName = "None";
@@ -141,7 +134,9 @@ public class SimplePicture implements DigitalPicture
   * Method to get the extension for this picture
   * @return the extendsion (jpg, bmp, giff, etc)
   */
- public String getExtension() { return extension; }
+ public String getExtension() {
+     return extension;
+ }
 
  
  /**
@@ -149,8 +144,7 @@ public class SimplePicture implements DigitalPicture
   * the current picture object 
   * @param sourcePicture  the picture object to copy
   */
- public void copyPicture(SimplePicture sourcePicture)
- {
+ public void copyPicture(SimplePicture sourcePicture) {
    Pixel sourcePixel = null;
    Pixel targetPixel = null;
    
@@ -158,14 +152,12 @@ public class SimplePicture implements DigitalPicture
    for (int sourceX = 0, targetX = 0; 
         sourceX < sourcePicture.getWidth() &&
         targetX < this.getWidth();
-        sourceX++, targetX++)
-   {
+        sourceX++, targetX++) {
      // loop through the rows
      for (int sourceY = 0, targetY = 0; 
           sourceY < sourcePicture.getHeight() && 
           targetY < this.getHeight();
-          sourceY++, targetY++)
-     {
+          sourceY++, targetY++) {
        sourcePixel = sourcePicture.getPixel(sourceX,sourceY);
        targetPixel = this.getPixel(targetX,targetY);
        targetPixel.setColor(sourcePixel.getColor());
@@ -178,14 +170,11 @@ public class SimplePicture implements DigitalPicture
   * Method to set the color in the picture to the passed color
   * @param color the color to set to
   */
- public void setAllPixelsToAColor(Color color)
- {
+ public void setAllPixelsToAColor(Color color) {
    // loop through all x
-   for (int x = 0; x < this.getWidth(); x++)
-   {
+   for (int x = 0; x < this.getWidth(); x++) {
      // loop through all y
-     for (int y = 0; y < this.getHeight(); y++)
-     {
+     for (int y = 0; y < this.getHeight(); y++) {
        getPixel(x,y).setColor(color);
      }
    }
@@ -195,18 +184,16 @@ public class SimplePicture implements DigitalPicture
   * Method to get the buffered image
   * @return the buffered image 
   */
- public BufferedImage getBufferedImage() 
- {
-    return bufferedImage;
+ public BufferedImage getBufferedImage() {
+     return bufferedImage;
  }
  
  /**
   * Method to get a graphics object for this picture to use to draw on
   * @return a graphics object to use for drawing
   */
- public Graphics getGraphics()
- {
-   return bufferedImage.getGraphics();
+ public Graphics getGraphics() {
+     return bufferedImage.getGraphics();
  }
  
  /**
