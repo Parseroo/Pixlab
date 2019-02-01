@@ -304,8 +304,7 @@ public class SimplePicture implements DigitalPicture {
   * @param y  the y location of the pixel in the picture
   * @return a Pixel object for this location
   */
- public Pixel getPixel(int x, int y)
- {
+ public Pixel getPixel(int x, int y) {
    // create the pixel object for this picture and the given x and y location
    Pixel pixel = new Pixel(this,x,y);
    return pixel;
@@ -334,8 +333,7 @@ public class SimplePicture implements DigitalPicture {
   * Method to get a two-dimensional array of Pixels for this simple picture
   * @return a two-dimensional array of Pixel objects in row-major order.
   */
- public Pixel[][] getPixels2D()
- {
+ public Pixel[][] getPixels2D() {
    int width = getWidth();
    int height = getHeight();
    Pixel[][] pixelArray = new Pixel[height][width];
@@ -352,8 +350,7 @@ public class SimplePicture implements DigitalPicture {
   * Method to load the buffered image with the passed image
   * @param image  the image to use
   */
- public void load(Image image)
- {
+ public void load(Image image) {
    // get a graphics context to use to draw on the buffered image
    Graphics2D graphics2d = bufferedImage.createGraphics();
    
@@ -391,8 +388,7 @@ public class SimplePicture implements DigitalPicture {
   * Method to make this picture visible or not
   * @param flag true if you want it visible else false
   */
- public void setVisible(boolean flag)
- {
+ public void setVisible(boolean flag) {
    if (flag)
      this.show();
    else 
@@ -403,8 +399,7 @@ public class SimplePicture implements DigitalPicture {
   * Method to open a picture explorer on a copy (in memory) of this 
   * simple picture
   */
- public void explore()
- {
+ public void explore() {
    // create a copy of the current picture and explore it
    new PictureExplorer(new SimplePicture(this));
  }
@@ -414,8 +409,7 @@ public class SimplePicture implements DigitalPicture {
   * useful after you have changed the pixels in a picture and
   * you want to see the change.
   */
- public void repaint()
- {
+ public void repaint() {
    // if there is a picture frame tell it to repaint
    if (pictureFrame != null)
      pictureFrame.repaint();
@@ -430,8 +424,7 @@ public class SimplePicture implements DigitalPicture {
   * @param fileName the file name to use to load the picture from
   * @throws IOException if the picture isn't found
   */
- public void loadOrFail(String fileName) throws IOException
- {
+ public void loadOrFail(String fileName) throws IOException {
     // set the current picture's file name
    this.fileName = fileName;
    
@@ -446,8 +439,7 @@ public class SimplePicture implements DigitalPicture {
    
    File file = new File(this.fileName);
 
-   if (!file.canRead()) 
-   {
+   if (!file.canRead()) {
      // try adding the media path 
      file = new File(FileChooser.getMediaPath(this.fileName));
      if (!file.canRead())
@@ -467,8 +459,7 @@ public class SimplePicture implements DigitalPicture {
   * @param fileName the name of the file to write the picture to
   * @return true if success else false
   */
- public boolean load(String fileName)
- {
+ public boolean load(String fileName) {
      try {
          this.loadOrFail(fileName);
          return true;
@@ -728,8 +719,7 @@ public class SimplePicture implements DigitalPicture {
   * Method to return a string with information about this picture
   * @return a string with information about the picture 
   */
- public String toString()
- {
+ public String toString() {
    String output = "Simple Picture, filename " + fileName + 
      " height " + getHeight() + " width " + getWidth();
    return output;
