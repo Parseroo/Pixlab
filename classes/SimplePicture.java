@@ -715,13 +715,12 @@ public class SimplePicture implements DigitalPicture {
   * @return a string with information about the picture 
   */
  public String toString() {
-   String output = "Simple Picture, filename " + fileName + 
-     " height " + getHeight() + " width " + getWidth();
+   String output = "Simple Picture, filename " + fileName + " height " + getHeight() + " width " + getWidth();
    return output;
  }
 
  public static void main (String args[]) {
-     Picture pix = new Picture("beach.jpg");
+     Picture pix = new Picture("CumberlandIsland.jpg");
      pix.explore();
  }
 
