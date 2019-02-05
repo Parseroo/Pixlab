@@ -719,9 +719,4 @@ public class SimplePicture implements DigitalPicture {
    return output;
  }
 
- public static void main (String args[]) {
-     Picture pix = new Picture("CumberlandIsland.jpg");
-     pix.explore();
- }
-
 } // end of SimplePicture class
