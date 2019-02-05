@@ -17,15 +17,10 @@ import java.awt.geom.*;
 public class SimplePicture implements DigitalPicture {
   
   /////////////////////// Fields /////////////////////////
-  
-  /**
-   * the file name associated with the simple picture
-   */
+    //the file name associated with the simple picture
   private String fileName;
   
-  /**
-   * the title of the simple picture
-   */
+   //the title of the simple picture
   private String title;
   
   /**
@@ -144,7 +139,7 @@ public class SimplePicture implements DigitalPicture {
   * the current picture object 
   * @param sourcePicture  the picture object to copy
   */
- public void copyPicture(SimplePicture sourcePicture) {
+ private void copyPicture(SimplePicture sourcePicture) {
    Pixel sourcePixel = null;
    Pixel targetPixel = null;
    
@@ -664,7 +659,7 @@ public class SimplePicture implements DigitalPicture {
    * transformation is applied to the current picture
    * @return the enclosing rectangle
    */
-  public Rectangle2D getTransformEnclosingRect(AffineTransform trans)
+  private Rectangle2D getTransformEnclosingRect(AffineTransform trans)
   {
     int width = getWidth();
     int height = getHeight();
@@ -723,6 +718,11 @@ public class SimplePicture implements DigitalPicture {
    String output = "Simple Picture, filename " + fileName + 
      " height " + getHeight() + " width " + getWidth();
    return output;
+ }
+
+ public static void main (String args[]) {
+     Picture pix = new Picture("beach.jpg");
+     pix.explore();
  }
 
 } // end of SimplePicture class

@@ -20,7 +20,7 @@ import javax.swing.border.*;
 public class PictureExplorer implements MouseMotionListener, ActionListener, MouseListener
 {
  
-  // current indicies
+  // current indices
   /** row index */
   private int rowIndex = 0; 
   /** column index */
@@ -99,8 +99,7 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
    * Public constructor 
    * @param picture the picture to explore
    */
-  public PictureExplorer(DigitalPicture picture)
-  {
+  public PictureExplorer(DigitalPicture picture) {
     // set the fields
     this.picture=picture;
     zoomFactor=1;
@@ -129,8 +128,7 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
   /**
    * Method to create and initialize the picture frame
    */
-  private void createAndInitPictureFrame()
-  {
+  private void createAndInitPictureFrame() {
     pictureFrame = new JFrame(); // create the JFrame
     pictureFrame.setResizable(true);  // allow the user to resize it
     pictureFrame.getContentPane().setLayout(new BorderLayout()); // use border layout
@@ -144,8 +142,7 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
   /**
    * Method to create the menu bar, menus, and menu items
    */
-  private void setUpMenuBar()
-  {
+  private void setUpMenuBar() {
     //create menu
     menuBar = new JMenuBar();
     zoomMenu = new JMenu("Zoom");
@@ -184,8 +181,7 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
   /**
    * Create and initialize the scrolling image
    */
-  private void createAndInitScrollingImage()
-  {
+  private void createAndInitScrollingImage() {
     scrollPane = new JScrollPane();
     
     BufferedImage bimg = picture.getBufferedImage();
@@ -200,8 +196,7 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
   /**
    * Creates the JFrame and sets everything up
    */
-  private void createWindow()
-  {
+  private void createWindow() {
     // create the picture frame and initialize it
     createAndInitPictureFrame();
     
@@ -223,8 +218,7 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
    * Method to set up the next and previous buttons for the
    * pixel location information
    */
-  private void setUpNextAndPreviousButtons()
-  {
+  private void setUpNextAndPreviousButtons() {
     // create the image icons for the buttons
     Icon prevIcon = new ImageIcon(DigitalPicture.class.getResource("leftArrow.gif"), 
                                   "previous index");
