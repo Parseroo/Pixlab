@@ -11,8 +11,7 @@ import java.awt.image.BufferedImage;
  * 
  * @author Barb Ericson ericson@cc.gatech.edu
  */
-public interface DigitalPicture 
-{
+public interface DigitalPicture {
   public String getFileName(); // get the file name that the picture came from
   public String getTitle(); // get the title of the picture
   public void setTitle(String title); // set the title of the picture
@@ -30,4 +29,6 @@ public interface DigitalPicture
   public void show(); // show the picture 
   public void explore(); // explore the picture
   public boolean write(String fileName); // write out a file
+
+
 }

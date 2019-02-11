@@ -61,7 +61,8 @@ public class SimplePicture implements DigitalPicture {
   */
  public SimplePicture(String fileName) {
    
-   // load the picture into the buffered image 
+   // load the picture into the buffered image
+
    load(fileName);
    
  }
@@ -373,8 +374,7 @@ public class SimplePicture implements DigitalPicture {
  /**
   * Method to hide the picture display
   */
- public void hide()
- {
+ public void hide() {
    if (pictureFrame != null)
      pictureFrame.setVisible(false);
  }
@@ -437,8 +437,7 @@ public class SimplePicture implements DigitalPicture {
    if (!file.canRead()) {
      // try adding the media path 
      file = new File(FileChooser.getMediaPath(this.fileName));
-     if (!file.canRead())
-     {
+     if (!file.canRead()) {
        throw new IOException(this.fileName +
                              " could not be opened. Check that you specified the path");
      }
@@ -486,8 +485,7 @@ public class SimplePicture implements DigitalPicture {
   * @param xPos  the leftmost point of the string in x 
   * @param yPos  the bottom of the string in y
   */
- public void addMessage(String message, int xPos, int yPos)
- {
+ public void addMessage(String message, int xPos, int yPos) {
    // get a graphics context to use to draw on the buffered image
    Graphics2D graphics2d = bufferedImage.createGraphics();
    
@@ -520,8 +518,7 @@ public class SimplePicture implements DigitalPicture {
    * @param cFactor the amount to scale in the width (columns)
    * @return the resulting picture
    */
-  public Picture scale(double rFactor, double cFactor)
-  {
+  public Picture scale(double rFactor, double cFactor) {
     // set up the scale tranform
     AffineTransform scaleTransform = new AffineTransform();
     scaleTransform.scale(cFactor,rFactor);
@@ -547,8 +544,7 @@ public class SimplePicture implements DigitalPicture {
    * @param width the desired width
    * @return the resulting picture
    */
-  public Picture getPictureWithWidth(int width)
-  {
+  public Picture getPictureWithWidth(int width) {
     // set up the scale tranform
     double xFactor = (double) width / this.getWidth();
     Picture result = scale(xFactor,xFactor);
@@ -562,8 +558,7 @@ public class SimplePicture implements DigitalPicture {
    * @param height the desired height
    * @return the resulting picture
    */
-  public Picture getPictureWithHeight(int height)
-  {
+  public Picture getPictureWithHeight(int height) {
     // set up the scale tranform
     double yFactor = (double) height / this.getHeight();
     Picture result = scale(yFactor,yFactor);
@@ -575,8 +570,7 @@ public class SimplePicture implements DigitalPicture {
   * @param fileName the file name to load the picture from
   * @return true if success else false
   */
- public boolean loadPictureAndShowIt(String fileName)
- {
+ public boolean loadPictureAndShowIt(String fileName) {
    boolean result = true;  // the default is that it worked
    
    // try to load the picture into the buffered image from the file name
@@ -593,8 +587,7 @@ public class SimplePicture implements DigitalPicture {
   * the passed name
   * @param fileName the name of the file to write the picture to
   */
- public void writeOrFail(String fileName) throws IOException
- {
+ public void writeOrFail(String fileName) throws IOException {
    String extension = this.extension; // the default is current
    
    // create the file object
@@ -602,8 +595,7 @@ public class SimplePicture implements DigitalPicture {
    File fileLoc = file.getParentFile(); // directory name
    
    // if there is no parent directory use the current media dir
-   if (fileLoc == null)
-   {
+   if (fileLoc == null) {
      fileName = FileChooser.getMediaPath(fileName);
      file = new File(fileName);
      fileLoc = file.getParentFile(); 
@@ -631,8 +623,7 @@ public class SimplePicture implements DigitalPicture {
   * @param fileName the name of the file to write the picture to
   * @return true if success else false
   */
- public boolean write(String fileName)
- {
+ public boolean write(String fileName) {
      try {
          this.writeOrFail(fileName);
          return true;
@@ -659,8 +650,7 @@ public class SimplePicture implements DigitalPicture {
    * transformation is applied to the current picture
    * @return the enclosing rectangle
    */
-  private Rectangle2D getTransformEnclosingRect(AffineTransform trans)
-  {
+  private Rectangle2D getTransformEnclosingRect(AffineTransform trans) {
     int width = getWidth();
     int height = getHeight();
     double maxX = width - 1;
@@ -718,5 +708,4 @@ public class SimplePicture implements DigitalPicture {
    String output = "Simple Picture, filename " + fileName + " height " + getHeight() + " width " + getWidth();
    return output;
  }
-
 } // end of SimplePicture class
