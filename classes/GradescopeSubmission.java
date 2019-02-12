@@ -1,3 +1,5 @@
+package com.gradescope.pixlab;
+
 public class GradescopeSubmission {
 
     private static void partOne() {
@@ -9,18 +11,23 @@ public class GradescopeSubmission {
         IntArrayWorker worker = new IntArrayWorker();
         int[][] nums = {{1, 1, 1} ,{2,2,2}};
         worker.setMatrix(nums);
-//        worker.getCount(0);
-//        worker.getLargest();
-//        worker.getColTotal(0);
-//        IntArrayWorkerTester.testGetCount();
-//        IntArrayWorkerTester.testGetLargest();
-//        IntArrayWorkerTester.testGetColTotal();
+        worker.getCount(0);
+        worker.getLargest();
+        worker.getColTotal(0);
+        IntArrayWorkerTester.testGetCount();
+        IntArrayWorkerTester.testGetLargest();
+        IntArrayWorkerTester.testGetColTotal();
     }
 
     private static void partTwo() {
         /* Note: the images chosen are just examples, they're not necessarily the ones used in the autograder */
 
         /* A5 */
+        DigitalPicture p = new SimplePicture();
+        DigitalPicture h = new Picture();
+        SimplePicture g = new Picture();
+        //Picture j = new SimplePicture(); SimplePicture cannot be converted to Picture
+
         Picture pixA5 = new Picture("images/beach.jpg");
 //        pixA5.keepOnlyBlue();
 //        pixA5.negate();
@@ -71,5 +78,6 @@ public class GradescopeSubmission {
         GradescopeSubmission.partOne();
         GradescopeSubmission.partTwo();
         GradescopeSubmission.partThree();
+
     }
 }

@@ -92,6 +92,5 @@ public class IntArrayWorkerTester {
     testGetTotalNested();
     testGetLargest();
     testGetColTotal();
-    DigitalPicture p = new DigitalPicture();
   }
 }

@@ -1,3 +1,5 @@
+package com.gradescope.pixlab;
+
 import java.awt.*;
 import java.awt.font.*;
 import java.awt.geom.*;
@@ -72,7 +74,7 @@ public class Picture extends SimplePicture {
    * height and width.
    */
   public String toString() {
-    String output = "Picture, filename " + getFileName() + 
+    String output = "Picture, filename " + getFileName() +
       " height " + getHeight() 
       + " width " + getWidth();
     return output;
