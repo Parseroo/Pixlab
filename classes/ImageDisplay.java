@@ -1,3 +1,5 @@
+package com.gradescope.pixlab;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.*;

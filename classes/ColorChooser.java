@@ -1,3 +1,4 @@
+package com.gradescope.pixlab;
 import javax.swing.JColorChooser;
 import javax.swing.JFrame;
 import java.awt.Color;

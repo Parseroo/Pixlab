@@ -1,3 +1,4 @@
+package com.gradescope.pixlab;
 import javax.swing.*;
 import java.awt.*;
 
@@ -6,8 +7,7 @@ import java.awt.*;
  * 
  * @author Barb Ericson 
  */
-public class PictureFrame
-{
+public class PictureFrame {
   
   ////////////////// fields ////////////////////////////
   
