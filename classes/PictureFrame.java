@@ -1,4 +1,3 @@
-package com.gradescope.pixlab;
 import javax.swing.*;
 import java.awt.*;
 

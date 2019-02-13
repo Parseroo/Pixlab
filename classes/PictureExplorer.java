@@ -1,5 +1,3 @@
-package com.gradescope.pixlab;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -18,8 +16,7 @@ import javax.swing.border.*;
  * @author Keith McDermottt, gte047w@cc.gatech.edu
  * @author Barb Ericson ericson@cc.gatech.edu
  */
-public class PictureExplorer implements MouseMotionListener, ActionListener, MouseListener
-{
+public class PictureExplorer implements MouseMotionListener, ActionListener, MouseListener {
  
   // current indices
   /** row index */

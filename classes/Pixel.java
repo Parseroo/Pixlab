@@ -1,5 +1,3 @@
-package com.gradescope.pixlab;
-
 import java.awt.Color;
 
 /**

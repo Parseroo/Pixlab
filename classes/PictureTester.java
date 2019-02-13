@@ -1,6 +1,3 @@
-package com.gradescope.pixlab;
-
-
 /**
  * This class contains class (static) methods
  * that will help you test the Picture class 
@@ -22,6 +19,20 @@ public class PictureTester {
   }
 
   /** Method to test keepOnlyBlue */
+  public static void testKeepOnlyBlue() {
+      Picture beach = new Picture("images/beach.jpg");
+      beach.explore(); //comment these out in repl.it
+      beach.keepOnlyBlue();
+      beach.explore(); //comment these out in repl.it
+  }
+
+  /** Method to test negate */
+  public static void testNegate() {
+      Picture beach = new Picture("images/beach.jpg");
+      beach.explore(); //comment these out in repl.it
+      beach.negate();
+      beach.explore(); //comment these out in repl.it
+  }
 
   /** Method to test mirrorVertical */
   public static void testMirrorVertical() {
@@ -60,10 +71,10 @@ public class PictureTester {
     // and comment out the ones you don't want
     // to run
     testZeroBlue();
-    //testKeepOnlyBlue();
+    testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    //testNegate();
+    testNegate();
     //testGrayscale();
     //testFixUnderwater();
     //testMirrorVertical();

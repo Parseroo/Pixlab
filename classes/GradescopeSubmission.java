@@ -1,5 +1,3 @@
-package com.gradescope.pixlab;
-
 public class GradescopeSubmission {
 
     private static void partOne() {
@@ -29,7 +27,7 @@ public class GradescopeSubmission {
         //Picture j = new SimplePicture(); SimplePicture cannot be converted to Picture
 
         Picture pixA5 = new Picture("images/beach.jpg");
-//        pixA5.keepOnlyBlue();
+        //pixA5.keepOnlyBlue();
 //        pixA5.negate();
 //        pixA5.grayscale();
 //        PictureTester.testKeepOnlyBlue();
