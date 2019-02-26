@@ -1,3 +1,5 @@
+//package com.gradescope.pixlab;
+
 import java.awt.*;
 import java.awt.font.*;
 import java.awt.geom.*;
@@ -98,6 +100,27 @@ public class Picture extends SimplePicture {
     }
   }
 
+  public void keepOnlyRed() {
+      Pixel[][] pixels = this.getPixels2D();
+      for (Pixel[] rowArray : pixels) {
+          for (Pixel pixelObj : rowArray) {
+              pixelObj.setBlue(0);
+              pixelObj.setGreen(0);
+          }
+      }
+  }
+
+  public void keepOnlyGreen() {
+      Pixel[][] pixels = this.getPixels2D();
+      for (Pixel[] rowArray : pixels) {
+          for (Pixel pixelObj : rowArray) {
+              pixelObj.setRed(0);
+              pixelObj.setBlue(0);
+          }
+      }
+  }
+
+
   public void negate() {
     Pixel[][] pixels = this.getPixels2D();
     for (Pixel[] rowArray : pixels) {
@@ -120,7 +143,25 @@ public class Picture extends SimplePicture {
       }
     }
   }
-  
+
+  public void fixUnderwater() {
+      Pixel[][] pixels = this.getPixels2D();
+      for (Pixel[] rowArray : pixels) {
+          for (Pixel pixelObj : rowArray) {
+              pixelObj.setRed(0);
+          }
+      }
+  }
+
+  /*public void mirrorVerticalRightToLeft() {
+      Pixel[][] pixels = this.getPixels2D();
+      for (Pixel[] rowArray : pixels) {
+          for (Pixel pixelObj : rowArray) {
+
+          }
+      }
+  }*/
+
   /** Method that mirrors the picture around a 
     * vertical mirror in the center of the picture
     * from left to right */

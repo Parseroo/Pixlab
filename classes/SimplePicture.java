@@ -1,4 +1,4 @@
-package com.gradescope.pixlab;
+//package com.gradescope.pixlab;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;

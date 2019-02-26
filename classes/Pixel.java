@@ -1,3 +1,5 @@
+//package com.gradescope.pixlab;
+
 import java.awt.Color;
 
 /**
@@ -8,7 +10,6 @@ import java.awt.Color;
  * to get and set the red, green, blue, and alpha 
  * values in the picture.  A pixel also knows how to get 
  * and set the color using a Color object.
- * 
  * @author Barb Ericson ericson@cc.gatech.edu
  */
 public class Pixel {

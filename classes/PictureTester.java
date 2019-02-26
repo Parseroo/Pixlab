@@ -1,3 +1,4 @@
+//package com.gradescope.pixlab;
 /**
  * This class contains class (static) methods
  * that will help you test the Picture class 
@@ -26,6 +27,22 @@ public class PictureTester {
       beach.explore(); //comment these out in repl.it
   }
 
+    /** Method to test keepOnlyRed */
+    public static void testKeepOnlyRed() {
+        Picture beach = new Picture("images/beach.jpg");
+        beach.explore(); //comment these out in repl.it
+        beach.keepOnlyRed();
+        beach.explore(); //comment these out in repl.it
+    }
+
+    public static void testKeepOnlyGreen() {
+        Picture beach = new Picture("images/beach.jpg");
+        beach.explore(); //comment these out in repl.it
+        beach.keepOnlyGreen();
+        beach.explore(); //comment these out in repl.it
+    }
+
+
   /** Method to test negate */
   public static void testNegate() {
       Picture beach = new Picture("images/beach.jpg");
@@ -42,7 +59,24 @@ public class PictureTester {
       beach.explore();
   }
 
-  /** Method to test mirrorVertical */
+  /** Method to test fixUnderwater */
+  public static void testFixUnderwater() {
+      Picture water = new Picture("images/water.jpg");
+      water.explore();
+      water.fixUnderwater();
+      water.explore();
+  }
+
+  /** Method to test MirrorVerticalRightToLeft */
+    /*public static void testMirrorVerticalRightToleft() {
+        Picture beach = new Picture("images/beach.jpg");
+        beach.explore();
+        beach.mirrorVerticalRightToLeft();
+        beach.explore();
+    }*/
+
+
+    /** Method to test mirrorVertical */
   public static void testMirrorVertical() {
     Picture caterpillar = new Picture("caterpillar.jpg");
     caterpillar.explore();
@@ -78,15 +112,16 @@ public class PictureTester {
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
-    testKeepOnlyBlue();
+    //testZeroBlue();
+    //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    testNegate();
-    testGreyscale();
+    //testNegate();
+    //testGreyscale();
     //testFixUnderwater();
-    //testMirrorVertical();
-    //testMirrorTemple();
+      //testMirrorVerticalRightToLeft();
+      testMirrorVertical();
+    testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
