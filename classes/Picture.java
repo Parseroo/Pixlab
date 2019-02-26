@@ -178,6 +178,22 @@ public class Picture extends SimplePicture {
       }
     } 
   }
+
+  /**Mirrors the picture across a diagonal line*/
+  public void mirrorDiagonal() {
+    Pixel[][] pixels = this.getPixels2D();
+    Pixel leftPixel = null;
+    Pixel rightPixel = null;
+    int width = pixels[0].length;
+    int length = pixels.length;
+    for (int row = 0; row < length; row++) {
+        for (int col = 0; col < width-row; col++) {
+          leftPixel = pixels[row][col];
+          rightPixel = pixels[width-col-1][length-1-row];
+          rightPixel.setColor(leftPixel.getColor());
+        }
+    }
+  }
   
   /** Mirror just part of a picture of a temple */
   public void mirrorTemple() {
@@ -273,10 +289,6 @@ public class Picture extends SimplePicture {
    * method 
    */
   public static void main(String[] args) {
-    Picture beach = new Picture("beach.jpg");
-    beach.explore();
-    beach.zeroBlue();
-    beach.explore();
   }
   
 } // this } is the end of class Picture, put all new methods before this
