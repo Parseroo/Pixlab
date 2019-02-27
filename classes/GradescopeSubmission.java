@@ -28,35 +28,34 @@ public class GradescopeSubmission {
         //Picture j = new SimplePicture(); SimplePicture cannot be converted to Picture
 
         Picture pixA5 = new Picture("images/beach.jpg");
-        //pixA5.keepOnlyBlue();
-//        pixA5.negate();
-//        pixA5.grayscale();
-//        PictureTester.testKeepOnlyBlue();
-//        PictureTester.testNegate();
-//        PictureTester.testGrayscale();
-//
-//        pix.fixUnderwater(); // Challenge problem
-//        pix.fixUnderwater(); // Challenge problem
+        pixA5.keepOnlyBlue();
+        pixA5.negate();
+        pixA5.grayscale();
+        PictureTester.testKeepOnlyBlue();
+        PictureTester.testNegate();
+        PictureTester.testGrayscale();
+
+        pix.fixUnderwater(); // Challenge problem
 
         /* A6 */
         Picture pixA6 = new Picture("images/beach.jpg");
-//        pixA6.mirrorVerticalRightToLeft();
-//        pixA6.mirrorHorizontal();
-//        pixA6.mirrorHorizontalBotToTop();
-//        PictureTester.testMirrorVerticalRightToLeft();
-//        PictureTester.testMirrorHorizontal();
-//        PictureTester.testMirrorHorizontalBotToTop();
+        pixA6.mirrorVerticalRightToLeft();
+        pixA6.mirrorHorizontal();
+        pixA6.mirrorHorizontalBotToTop();
+        PictureTester.testMirrorVerticalRightToLeft();
+        PictureTester.testMirrorHorizontal();
+        PictureTester.testMirrorHorizontalBotToTop();
 
         Picture pixChallengeA6 = new Picture("images/water.jpg");
-//        pixChallengeA6.mirrorDiagonal() // Challenge problem
-//        PictureTester.testMirrorDiagonal() // Challenge problem
+        pixChallengeA6.mirrorDiagonal() // Challenge problem
+        PictureTester.testMirrorDiagonal() // Challenge problem
 
         /* A7 */
         Picture pixA7 = new Picture("images/snowman.jpg");
-//        pixA7.mirrorArms();
-//        pixA7.mirrorGull();
-//        PictureTester.testMirrorArms();
-//        PictureTester.testMirrorGull();
+        pixA7.mirrorArms();
+        pixA7.mirrorGull();
+        PictureTester.testMirrorArms();
+        PictureTester.testMirrorGull();
     }
 
     private static void partThree() {
