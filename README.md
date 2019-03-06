@@ -1,1 +1,1 @@
-# PixLab-TEMPLATE
+# PixLab
