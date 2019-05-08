@@ -1,4 +1,4 @@
-package com.gradescope.pixlab;
+//package com.gradescope.pixlab;
 public class GradescopeSubmission {
 
     private static void partOne() {
@@ -18,11 +18,11 @@ public class GradescopeSubmission {
         IntArrayWorkerTester.testGetColTotal();
     }
 
-    private static void partTwo() {
+   // private static void partTwo() {
         /* Note: the images chosen are just examples, they're not necessarily the ones used in the autograder */
 
         /* A5 */
-        DigitalPicture p = new SimplePicture();
+/*        DigitalPicture p = new SimplePicture();
         DigitalPicture h = new Picture();
         SimplePicture g = new Picture();
         //Picture j = new SimplePicture(); SimplePicture cannot be converted to Picture
@@ -35,10 +35,10 @@ public class GradescopeSubmission {
         PictureTester.testNegate();
         PictureTester.testGrayscale();
 
-        pix.fixUnderwater(); // Challenge problem
+        pix.fixUnderwater(); // Challenge problem*/
 
         /* A6 */
-        Picture pixA6 = new Picture("images/beach.jpg");
+  /*      Picture pixA6 = new Picture("images/beach.jpg");
         pixA6.mirrorVerticalRightToLeft();
         pixA6.mirrorHorizontal();
         pixA6.mirrorHorizontalBotToTop();
@@ -47,35 +47,35 @@ public class GradescopeSubmission {
         PictureTester.testMirrorHorizontalBotToTop();
 
         Picture pixChallengeA6 = new Picture("images/water.jpg");
-        pixChallengeA6.mirrorDiagonal() // Challenge problem
-        PictureTester.testMirrorDiagonal() // Challenge problem
+        pixChallengeA6.mirrorDiagonal(); // Challenge problem
+        PictureTester.testMirrorDiagonal(); // Challenge problem */
 
         /* A7 */
-        Picture pixA7 = new Picture("images/snowman.jpg");
+ /*       Picture pixA7 = new Picture("images/snowman.jpg");
         pixA7.mirrorArms();
         pixA7.mirrorGull();
         PictureTester.testMirrorArms();
         PictureTester.testMirrorGull();
-    }
+    }*/
 
-    private static void partThree() {
+/*    private static void partThree() {*/
         /* Note: the images chosen are just examples, they're not necessarily the ones used in the autograder */
 
         /* A8 */
-        Picture pixA8 = new Picture("images/flower1.jpg");
+      //  Picture pixA8 = new Picture("images/flower1.jpg");
 //        pixA8.copy(startRow, endRow, startCol, endCol);
 //        pixA8.myCollage();
 //        PictureTester.testMyCollage();
 
         /* A9 */
-        Picture pixA9 = new Picture("images/swan.jpg");
+     //   Picture pixA9 = new Picture("images/swan.jpg");
 //        pixA9.edgeDetection(...) // intentionally vague about parameters, because each implementation is unique.
-    }
+   /* }*/
 
     public static void main(String[] args) {
         GradescopeSubmission.partOne();
-        GradescopeSubmission.partTwo();
-        GradescopeSubmission.partThree();
+    //    GradescopeSubmission.partTwo();
+    //    GradescopeSubmission.partThree();
 
     }
 }

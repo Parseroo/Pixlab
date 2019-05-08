@@ -68,12 +68,12 @@ public class PictureTester {
   }
 
   /** Method to test MirrorVerticalRightToLeft */
-    /*public static void testMirrorVerticalRightToleft() {
+    public static void testMirrorVerticalRightToleft() {
         Picture beach = new Picture("images/beach.jpg");
         beach.explore();
         beach.mirrorVerticalRightToLeft();
         beach.explore();
-    }*/
+    }
 
 
     /** Method to test mirrorVertical */
@@ -120,19 +120,19 @@ public class PictureTester {
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    //testZeroBlue();
-    //testKeepOnlyBlue();
-    //testKeepOnlyRed();
-    //testKeepOnlyGreen();
-    //testNegate();
-    //testGreyscale();
-    //testFixUnderwater();
-      //testMirrorVerticalRightToLeft();
-      //testMirrorVertical();
-    //testMirrorTemple();
+//      testZeroBlue();
+//    testKeepOnlyBlue();
+//    testKeepOnlyRed();
+//    testKeepOnlyGreen();
+//    testNegate();
+//    testGreyscale();
+//    testFixUnderwater();
+      testMirrorVerticalRightToleft();
+      testMirrorVertical();
+//    testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
-    testMirrorDiagonal();
+//    testMirrorDiagonal();
     //testCollage();
     //testCopy();
     //testEdgeDetection();

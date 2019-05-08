@@ -153,14 +153,14 @@ public class Picture extends SimplePicture {
       }
   }
 
-  /*public void mirrorVerticalRightToLeft() {
+  public void mirrorVerticalRightToLeft() {
       Pixel[][] pixels = this.getPixels2D();
       for (Pixel[] rowArray : pixels) {
           for (Pixel pixelObj : rowArray) {
 
           }
       }
-  }*/
+  }
 
   /** Method that mirrors the picture around a 
     * vertical mirror in the center of the picture
