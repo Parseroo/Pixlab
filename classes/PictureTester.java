@@ -68,7 +68,7 @@ public class PictureTester {
   }
 
   /** Method to test MirrorVerticalRightToLeft */
-    public static void testMirrorVerticalRightToleft() {
+    public static void testMirrorVerticalRightToLeft() {
         Picture beach = new Picture("images/beach.jpg");
         beach.explore();
         beach.mirrorVerticalRightToLeft();
@@ -156,7 +156,7 @@ public class PictureTester {
 //    testNegate();
 //    testGreyscale();
 //    testFixUnderwater();
-//    testMirrorVerticalRightToleft();
+//    testMirrorVerticalRightToLeft();
 //    testMirrorVertical();
 //    testMirrorHorizontal();
 //    testMirrorHorizontalBotToTop();

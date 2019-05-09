@@ -81,8 +81,7 @@ public class ImageDisplay extends JPanel implements Scrollable {
    * Method to set the current y
    * @param y the y value to use
    */
-  public void setCurrentY(int y) 
-  {
+  public void setCurrentY(int y) {
     currentY = y;
     repaint();
   }
@@ -91,8 +90,7 @@ public class ImageDisplay extends JPanel implements Scrollable {
    * Method to set the image
    * @param theImage the new image to use
    */
-  public void setImage(Image theImage)
-  {
+  public void setImage(Image theImage) {
     image = theImage;
     setPreferredSize(new Dimension(image.getWidth(this),image.getHeight(this)));
     repaint();
@@ -116,8 +114,8 @@ public class ImageDisplay extends JPanel implements Scrollable {
    */
   public int getScrollableUnitIncrement(Rectangle visibleRect, 
                                         int orientation, 
-                                        int direction)
-  { return 1; }
+                                        int direction) {
+    return 1; }
   
   /**
    * Method to return the block increment for scrolling
@@ -144,15 +142,13 @@ public class ImageDisplay extends JPanel implements Scrollable {
    * Method to check if the viewport height is the source height
    * @return true if viewport and source have same height
    */
-  public boolean getScrollableTracksViewportHeight()
-  { return false; }
+  public boolean getScrollableTracksViewportHeight() { return false; }
   
   /**
    * Method to handle displaying this object
    * @param g the graphics object for drawing with
    */
-  public void paintComponent(Graphics g)
-  {
+  public void paintComponent(Graphics g) {
     super.paintComponent(g);
     int num = 3;
     int xStart = currentX - num;
@@ -169,8 +165,7 @@ public class ImageDisplay extends JPanel implements Scrollable {
     
     // check if the current index is in the image
     if (currentX >= 0 && currentX < width &&
-        currentY >= 0 && currentY < height)
-    {
+        currentY >= 0 && currentY < height) {
       
       // check that the start and end values are visible
       if (xStart < 0)

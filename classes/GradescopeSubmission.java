@@ -18,11 +18,11 @@ public class GradescopeSubmission {
         IntArrayWorkerTester.testGetColTotal();
     }
 
-   // private static void partTwo() {
+    private static void partTwo() {
         /* Note: the images chosen are just examples, they're not necessarily the ones used in the autograder */
 
         /* A5 */
-/*        DigitalPicture p = new SimplePicture();
+        DigitalPicture p = new SimplePicture();
         DigitalPicture h = new Picture();
         SimplePicture g = new Picture();
         //Picture j = new SimplePicture(); SimplePicture cannot be converted to Picture
@@ -30,15 +30,15 @@ public class GradescopeSubmission {
         Picture pixA5 = new Picture("images/beach.jpg");
         pixA5.keepOnlyBlue();
         pixA5.negate();
-        pixA5.grayscale();
+        pixA5.greyscale();
         PictureTester.testKeepOnlyBlue();
         PictureTester.testNegate();
-        PictureTester.testGrayscale();
+        PictureTester.testGreyscale();
 
-        pix.fixUnderwater(); // Challenge problem*/
+        pixA5.fixUnderwater(); // Challenge problem*/
 
         /* A6 */
-  /*      Picture pixA6 = new Picture("images/beach.jpg");
+        Picture pixA6 = new Picture("images/beach.jpg");
         pixA6.mirrorVerticalRightToLeft();
         pixA6.mirrorHorizontal();
         pixA6.mirrorHorizontalBotToTop();
@@ -51,12 +51,12 @@ public class GradescopeSubmission {
         PictureTester.testMirrorDiagonal(); // Challenge problem */
 
         /* A7 */
- /*       Picture pixA7 = new Picture("images/snowman.jpg");
+        Picture pixA7 = new Picture("images/snowman.jpg");
         pixA7.mirrorArms();
         pixA7.mirrorGull();
         PictureTester.testMirrorArms();
         PictureTester.testMirrorGull();
-    }*/
+    }
 
 /*    private static void partThree() {*/
         /* Note: the images chosen are just examples, they're not necessarily the ones used in the autograder */
@@ -74,7 +74,7 @@ public class GradescopeSubmission {
 
     public static void main(String[] args) {
         GradescopeSubmission.partOne();
-    //    GradescopeSubmission.partTwo();
+        GradescopeSubmission.partTwo();
     //    GradescopeSubmission.partThree();
 
     }
