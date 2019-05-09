@@ -92,9 +92,23 @@ public class PictureTester {
     temple.explore();
   }
 
+  public static void testMirrorHorizontal() {
+      Picture motorcycle = new Picture("images/redMotorcycle.jpg");
+      motorcycle.explore();
+      motorcycle.mirrorHorizontal();
+      motorcycle.explore();
+  }
+
+  public static void testMirrorHorizontalBotToTop() {
+      Picture motorcycle = new Picture("images/redMotorcycle.jpg");
+      motorcycle.explore();
+      motorcycle.mirrorHorizontalBotToTop();
+      motorcycle.explore();
+  }
+
     /**Method to test mirrorDiagonal */
     public static void testMirrorDiagonal() {
-        Picture flower = new Picture("images/flower1.jpg");
+        Picture flower = new Picture("images/beach.jpg");
         flower.explore();
         flower.mirrorDiagonal();
         flower.explore();
@@ -113,8 +127,23 @@ public class PictureTester {
     swan.edgeDetection(10);
     swan.explore();
   }
-  
-  /** Main method for testing.  Every class can have a main
+
+  public static void testMirrorArms() {
+      Picture snowman = new Picture("images/snowman.jpg");
+      snowman.explore();
+      snowman.mirrorArms();
+      snowman.explore();
+  }
+
+  public static void testMirrorGull() {
+      Picture gull = new Picture("images/seagull.jpg");
+      gull.explore();
+      gull.mirrorGull();
+      gull.explore();
+  }
+
+
+    /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args) {
     // uncomment a call here to run a test
@@ -127,11 +156,14 @@ public class PictureTester {
 //    testNegate();
 //    testGreyscale();
 //    testFixUnderwater();
-      testMirrorVerticalRightToleft();
-      testMirrorVertical();
+//    testMirrorVerticalRightToleft();
+//    testMirrorVertical();
+//    testMirrorHorizontal();
+//    testMirrorHorizontalBotToTop();
+//    testMirrorDiagonal();
 //    testMirrorTemple();
-    //testMirrorArms();
-    //testMirrorGull();
+//    testMirrorArms();
+    testMirrorGull();
 //    testMirrorDiagonal();
     //testCollage();
     //testCopy();
