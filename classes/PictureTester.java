@@ -120,12 +120,26 @@ public class PictureTester {
     canvas.createCollage();
     canvas.explore();
   }
+
+  public static void testCopy() {
+      Picture flower = new Picture("images/flower1.jpg");
+      Picture beach = new Picture("images/beach.jpg");
+      flower.explore();
+      flower.copy(beach, 50, 0);
+      flower.explore();
+  }
   
   /** Method to test edgeDetection */
   public static void testEdgeDetection() {
     Picture swan = new Picture("images/swan.jpg");
     swan.edgeDetection(10);
     swan.explore();
+  }
+
+  public static void testEdgeDetection2() {
+      Picture swan = new Picture("images/swan.jpg");
+      swan.edgeDetection2(10);
+      swan.explore();
   }
 
   public static void testMirrorArms() {
@@ -140,6 +154,13 @@ public class PictureTester {
       gull.explore();
       gull.mirrorGull();
       gull.explore();
+  }
+
+  public static void testMyCollage() {
+      //this is an amazingly terrible one minute collage and I'm extremely proud of it.
+      Picture canvas = new Picture("images/7inX95in.jpg");
+      canvas.myCollage();
+      canvas.explore();
   }
 
 
@@ -163,17 +184,18 @@ public class PictureTester {
 //    testMirrorDiagonal();
 //    testMirrorTemple();
 //    testMirrorArms();
-    testMirrorGull();
+//    testMirrorGull();
 //    testMirrorDiagonal();
-    //testCollage();
-    //testCopy();
-    //testEdgeDetection();
-    //testEdgeDetection2();
-    //testChromakey();
-    //testEncodeAndDecode();
-    //testGetCountRedOverValue(250);
-    //testSetRedToHalfValueInTopHalf();
-    //testClearBlueOverValue(200);
-    //testGetAverageForColumn(0);
+//    testCollage();
+//    testMyCollage();
+//    testCopy();
+//    testEdgeDetection();
+//    testEdgeDetection2();
+//    testChromakey();
+//    testEncodeAndDecode();
+//    testGetCountRedOverValue(250);
+//    testSetRedToHalfValueInTopHalf();
+//    testClearBlueOverValue(200);
+//    testGetAverageForColumn(0);
   }
 }

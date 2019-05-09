@@ -58,24 +58,25 @@ public class GradescopeSubmission {
         PictureTester.testMirrorGull();
     }
 
-/*    private static void partThree() {*/
+    private static void partThree() {
         /* Note: the images chosen are just examples, they're not necessarily the ones used in the autograder */
 
         /* A8 */
-      //  Picture pixA8 = new Picture("images/flower1.jpg");
-//        pixA8.copy(startRow, endRow, startCol, endCol);
-//        pixA8.myCollage();
-//        PictureTester.testMyCollage();
+        Picture pixA8 = new Picture("images/flower1.jpg");
+        Picture beach = new Picture("images/beach.jpg");
+        pixA8.copy(beach, 5, 60);
+        pixA8.myCollage();
+        PictureTester.testMyCollage();
 
         /* A9 */
-     //   Picture pixA9 = new Picture("images/swan.jpg");
-//        pixA9.edgeDetection(...) // intentionally vague about parameters, because each implementation is unique.
-   /* }*/
+        Picture pixA9 = new Picture("images/swan.jpg");
+        pixA9.edgeDetection(10); // intentionally vague about parameters, because each implementation is unique.
+    }
 
     public static void main(String[] args) {
         GradescopeSubmission.partOne();
         GradescopeSubmission.partTwo();
-    //    GradescopeSubmission.partThree();
+        GradescopeSubmission.partThree();
 
     }
 }
