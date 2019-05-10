@@ -170,26 +170,26 @@ public class PictureTester {
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-//      testZeroBlue();
-//    testKeepOnlyBlue();
-//    testKeepOnlyRed();
-//    testKeepOnlyGreen();
-//    testNegate();
-//    testGreyscale();
+      testZeroBlue();
+    testKeepOnlyBlue();
+    testKeepOnlyRed();
+    testKeepOnlyGreen();
+    testNegate();
+    testGreyscale();
 //    testFixUnderwater();
-//    testMirrorVerticalRightToLeft();
-//    testMirrorVertical();
-//    testMirrorHorizontal();
-//    testMirrorHorizontalBotToTop();
-//    testMirrorDiagonal();
-//    testMirrorTemple();
-//    testMirrorArms();
-//    testMirrorGull();
-//    testMirrorDiagonal();
-//    testCollage();
-//    testMyCollage();
-//    testCopy();
-//    testEdgeDetection();
-//    testEdgeDetection2();
+    testMirrorVerticalRightToLeft();
+    testMirrorVertical();
+    testMirrorHorizontal();
+    testMirrorHorizontalBotToTop();
+    testMirrorDiagonal();
+    testMirrorTemple();
+    testMirrorArms();
+    testMirrorGull();
+    testMirrorDiagonal();
+    testCollage();
+    testMyCollage();
+    testCopy();
+    testEdgeDetection();
+    testEdgeDetection2();
   }
 }
