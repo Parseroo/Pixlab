@@ -3,7 +3,6 @@ public class GradescopeSubmission {
 
     private static void partOne() {
         /* Note: the images/arrays chosen are just examples, they're not necessarily the ones used in the autograder */
-
         /* A1, A2, and A3 are all short answer */
 
         /* A4 */
