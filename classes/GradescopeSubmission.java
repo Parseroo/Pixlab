@@ -18,11 +18,11 @@ public class GradescopeSubmission {
         IntArrayWorkerTester.testGetColTotal();
     }
 
-    private static void partTwo() {
+//    private static void partTwo() {
         /* Note: the images chosen are just examples, they're not necessarily the ones used in the autograder */
 
         /* A5 */
-        DigitalPicture p = new SimplePicture();
+/*        DigitalPicture p = new SimplePicture();
         DigitalPicture h = new Picture();
         SimplePicture g = new Picture();
         //Picture j = new SimplePicture(); SimplePicture cannot be converted to Picture
@@ -38,7 +38,7 @@ public class GradescopeSubmission {
         pixA5.fixUnderwater(); // Challenge problem*/
 
         /* A6 */
-        Picture pixA6 = new Picture("images/beach.jpg");
+/*        Picture pixA6 = new Picture("images/beach.jpg");
         pixA6.mirrorVerticalRightToLeft();
         pixA6.mirrorHorizontal();
         pixA6.mirrorHorizontalBotToTop();
@@ -51,7 +51,7 @@ public class GradescopeSubmission {
         PictureTester.testMirrorDiagonal(); // Challenge problem */
 
         /* A7 */
-        Picture pixA7 = new Picture("images/snowman.jpg");
+  /*      Picture pixA7 = new Picture("images/snowman.jpg");
         pixA7.mirrorArms();
         pixA7.mirrorGull();
         PictureTester.testMirrorArms();
@@ -62,21 +62,21 @@ public class GradescopeSubmission {
         /* Note: the images chosen are just examples, they're not necessarily the ones used in the autograder */
 
         /* A8 */
-        Picture pixA8 = new Picture("images/flower1.jpg");
+    /*    Picture pixA8 = new Picture("images/flower1.jpg");
         Picture beach = new Picture("images/beach.jpg");
         pixA8.copy(beach, 5, 60);
         pixA8.myCollage();
         PictureTester.testMyCollage();
 
         /* A9 */
-        Picture pixA9 = new Picture("images/swan.jpg");
+      /*  Picture pixA9 = new Picture("images/swan.jpg");
         pixA9.edgeDetection(10); // intentionally vague about parameters, because each implementation is unique.
-    }
+    }/*/
 
     public static void main(String[] args) {
         GradescopeSubmission.partOne();
-        GradescopeSubmission.partTwo();
-        GradescopeSubmission.partThree();
+        //GradescopeSubmission.partTwo();
+        //GradescopeSubmission.partThree();
 
     }
 }
